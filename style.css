@@ -1,0 +1,14 @@
+body{
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
