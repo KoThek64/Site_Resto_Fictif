@@ -10,5 +10,9 @@ ul{
 
 nav ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+}
+
+nav ul li{
+    margin-left: 20px;
 }
