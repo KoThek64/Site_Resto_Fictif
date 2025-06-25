@@ -71,7 +71,7 @@ div div img{
 
 .image-container {
     position: relative;
-    width: 1100px;
+    width: 1200px;
     height: 500px;
     margin: 0 auto;
 }
@@ -86,11 +86,11 @@ div div img{
 .centered-text {
     font-weight: bold;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    font-size: 2em;
+    font-size: 2.3em;
     color: white;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
@@ -100,12 +100,74 @@ div div img{
 
 .centered-text-bis{
     position: absolute;
-    top: 75%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     color: white;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.centered-buttons-1{
+    position: absolute;
+    top: 75%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.centered-buttons-2{
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.btn-menu {
+    display: inline-block;
+    padding: 12.5px 30px;
+    border-radius: 100px;
+    background-color: #dfdada;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.btn-menu:hover {
+    background-color: #817d7d;
+    box-shadow: 0 0 20px rgba(140, 136, 136, 0.31);
+    transform: scale(1.1);
+    color: #000000;
+}
+
+.btn-menu:active {
+    background-color: #817d7d;
+    transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+    color: #000000;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
 }
