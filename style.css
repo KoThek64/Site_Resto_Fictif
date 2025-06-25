@@ -180,3 +180,11 @@ nav ul li{
     object-fit: cover;
     border-radius: 10px;
 }
+
+.Texte-sous-photo{
+    margin: auto;
+    text-align: center;
+    font-size: 1.4em;
+    width: 1150px;
+    padding: 20px;
+}
