@@ -1,5 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
 
+/* HEADER */
+.btn-reservation {
+    display: inline-block;
+    padding: 12.5px 30px;
+    border-radius: 100px;
+    background-color: #fb2b2b;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.btn-reservation:hover {
+    background-color: #ff6f6f;
+    box-shadow: 0 0 20px rgba(255, 111, 111, 0.31);
+    transform: scale(1.1);
+    color: white;
+}
+
+.btn-reservation:active {
+    background-color: #cf3d3d;
+    transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+    color: white;
+}
+
+/* BODY */
 body{
     font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
     font-style: normal;
@@ -10,13 +38,31 @@ ul{
     padding-left: 0;
 }
 
-nav ul{
+nav ul {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
+    margin: 0;
+    padding-right: 10px;
+    padding-top: 5px;
 }
 
 nav ul li{
     margin-left: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.liste {
+    color: black;
+    text-decoration: none;
+}
+
+.liste:visited,
+.liste:hover,
+.liste:active {
+    color: black;
 }
 
 div div img{
@@ -25,8 +71,8 @@ div div img{
 
 .image-container {
     position: relative;
-    width: 1100px; /* même largeur que ton image */
-    height: 500px; /* hauteur souhaitée */
+    width: 1100px;
+    height: 500px;
     margin: 0 auto;
 }
 
@@ -38,6 +84,7 @@ div div img{
 }
 
 .centered-text {
+    font-weight: bold;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -46,7 +93,19 @@ div div img{
     font-size: 2em;
     color: white;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* optionnel : ajoute un fond pour plus de lisibilité */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.centered-text-bis{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
