@@ -1,6 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
 
 /* HEADER */
+header {
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.titre-site {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+}
+
+.texte-cliquable{
+    text-decoration: none;
+    color: black;
+}
+
 .btn-reservation {
     display: inline-block;
     padding: 12.5px 30px;
@@ -31,6 +61,13 @@
 body{
     font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
     font-style: normal;
+}
+
+.body-container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 ul{
@@ -67,7 +104,6 @@ nav ul li{
 
 .image-container {
     position: relative;
-    width: 1200px;
     height: 500px;
     margin: 0 auto;
 }
@@ -89,7 +125,7 @@ nav ul li{
     font-size: 2.3em;
     color: white;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 10px 20px;
     border-radius: 10px;
 }
@@ -103,7 +139,7 @@ nav ul li{
     font-size: 1.2em;
     color: white;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
 }
 
@@ -166,7 +202,7 @@ nav ul li{
 }
 
 .grande {
-    grid-row: 1 / 3; /* occupe deux lignes */
+    grid-row: 1 / 3;
     grid-column: 1 / 2;
     width: 100%;
     height: 100%;
@@ -187,4 +223,33 @@ nav ul li{
     font-size: 1.4em;
     width: 1150px;
     padding: 20px;
+}
+
+.zone-separee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.Partie-gauche {
+    flex: 1;
+    padding-bottom: 35px;
+}
+
+.Partie-droite {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Partie-droite img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.Plats{
+    color: #333333;
 }
