@@ -7,6 +7,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 5px;
 }
 
 .header-left {
@@ -23,6 +24,11 @@ header {
     font-size: 1.4em;
     font-weight: bold;
     color: #333;
+}
+
+.texte-cliquable{
+    text-decoration: none;
+    color: black;
 }
 
 .btn-reservation {
@@ -219,12 +225,31 @@ nav ul li{
     padding: 20px;
 }
 
-.Partie-gauche{
+.zone-separee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
     margin: auto;
-    text-align: left;
 }
 
-.Partie-droite{
-    margin: auto;
-    text-align: right;
+.Partie-gauche {
+    flex: 1;
+    padding-bottom: 35px;
+}
+
+.Partie-droite {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Partie-droite img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.Plats{
+    color: #333333;
 }
