@@ -284,3 +284,15 @@ nav ul li{
     display: flex;
     justify-content: center;
 }
+
+/* PARTIE MENU */
+
+.Prix{
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 65px;
+    text-align: center;
+}
