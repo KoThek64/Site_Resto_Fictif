@@ -55,12 +55,10 @@
         <br>
         <h2>Formulaire de contact</h2>
         <form action="https://formsubmit.co/mattys.contact@gmail.com" method="POST">
-            <!-- Paramètres cachés -->
-            <input type="hidden" name="_template" value="box">
-            <input type="hidden" name="_next" value="merci.html">
-            <input type="hidden" name="_subject" value="Nouvelle prise de contact !">
+            <input type="hidden" name="_next" value="https://cuisinedelight.netlify.app/html/merci.html">
 
-            <!-- Champs visibles -->
+            <input type="hidden" name="_template" value="box">
+
             <h3 class="Form">Nom</h3>
             <label>
                 <input type="text" name="Nom" placeholder="Votre nom" class="input" required>
@@ -73,7 +71,7 @@
 
             <h3 class="Form">Sujet</h3>
             <label>
-                <input type="text" name="Sujet" placeholder="Sujet du message" class="input" required>
+                <input type="text" name="_subject" placeholder="Sujet du message" class="input" required>
             </label>
 
             <h3 class="Form">Message</h3>
