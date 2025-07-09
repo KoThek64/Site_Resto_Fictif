@@ -20,12 +20,72 @@
         <ul>
             <li><a href="index.html" class="liste">Acceuil</a></li>
             <li><a href="menu.html" class="liste">Menu</a></li>
-            <li><a href="avis.html" class="liste">Avis</a></li>
             <li><a href="contact.html" class="liste">Contact</a></li>
             <li><a href="reservation.html" class="btn-reservation">Réservations</a></li>
         </ul>
     </nav>
 </header>
+
+<main>
+    <br>
+    <div class="body-container">
+        <h1>Contactez-nous</h1>
+        <p>Nous sommes là pour vous aider. Si vous avez des questions, des commentaires ou des demandes spécifiques, n'hésitez pas à nous contacter. Nous nous efforcerons de vous répondre dans les plus brefs délais.</p>
+        <br>
+        <h2>Informations de contact</h2>
+        <p class="trait">Adresse : 123 Rue de la Gastronomie, 75001 Paris, France</p>
+        <p class="trait">Téléphone : 01 23 45 67 89</p>
+        <p class="trait">Email : delight.contact@fausseadresse.com</p>
+        <br>
+        <h2>Suivez-nous</h2>
+        <div class="zone-sociaux">
+            <div class="Lien_sociaux">
+                <a href="https://www.instagram.com/matts.l_/" target="_blank"><img src="../images/Contact/instagram.png" alt="Instagram" class="logo_contact"></a>
+            </div>
+            <div class="Lien_sociaux">
+                <a href="https://www.facebook.com/mattys.lachaise" target="_blank"><img src="../images/Contact/facebook.png" alt="Facebook" class="logo_contact"></a>
+            </div>
+            <div class="Lien_sociaux">
+                <a href="https://twitter.com/j_ai_pas_de_compte_twitter" target="_blank"><img src="../images/Contact/twitter.png" alt="Twitter" class="logo_contact"></a>
+            </div>
+            <div class="Lien_sociaux">
+                <a href="https://github.com/KoThek64" target="_blank"><img src="../images/Contact/github.png" alt="GitHub" class="logo_contact"></a>
+            </div>
+        </div>
+        <br>
+        <h2>Formulaire de contact</h2>
+        <form action="https://formsubmit.co/mattys.contact@gmail.com" method="POST">
+            <!-- Paramètres cachés -->
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_next" value="merci.html">
+            <input type="hidden" name="_subject" value="Nouvelle prise de contact !">
+
+            <!-- Champs visibles -->
+            <h3 class="Form">Nom</h3>
+            <label>
+                <input type="text" name="Nom" placeholder="Votre nom" class="input" required>
+            </label>
+
+            <h3 class="Form">Email</h3>
+            <label>
+                <input type="email" name="Email" placeholder="Votre email" class="input" required>
+            </label>
+
+            <h3 class="Form">Sujet</h3>
+            <label>
+                <input type="text" name="Sujet" placeholder="Sujet du message" class="input" required>
+            </label>
+
+            <h3 class="Form">Message</h3>
+            <label>
+                <textarea name="Message" placeholder="Votre message" class="TextArea" required></textarea>
+            </label>
+
+            <br><br>
+            <button type="submit" class="btn-envoyer">Envoyer</button>
+        </form>
+    </div>
+</main>
 
 </body>
 </html>
