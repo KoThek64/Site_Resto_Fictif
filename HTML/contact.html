@@ -38,9 +38,52 @@
         <p class="trait">Email : delight.contact@fausseadresse.com</p>
         <br>
         <h2>Suivez-nous</h2>
-        <div>
-
+        <div class="zone-sociaux">
+            <div class="Lien_sociaux">
+                <a href="https://www.instagram.com/matts.l_/" target="_blank"><img src="../images/Contact/instagram.png" alt="Instagram" class="logo_contact"></a>
+            </div>
+            <div class="Lien_sociaux">
+                <a href="https://www.facebook.com/mattys.lachaise" target="_blank"><img src="../images/Contact/facebook.png" alt="Facebook" class="logo_contact"></a>
+            </div>
+            <div class="Lien_sociaux">
+                <a href="https://twitter.com/j_ai_pas_de_compte_twitter" target="_blank"><img src="../images/Contact/twitter.png" alt="Twitter" class="logo_contact"></a>
+            </div>
+            <div class="Lien_sociaux">
+                <a href="https://github.com/KoThek64" target="_blank"><img src="../images/Contact/github.png" alt="GitHub" class="logo_contact"></a>
+            </div>
         </div>
+        <br>
+        <h2>Formulaire de contact</h2>
+        <form action="https://formsubmit.co/mattys.contact@gmail.com" method="POST">
+            <!-- Paramètres cachés -->
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_next" value="merci.html">
+            <input type="hidden" name="_subject" value="Nouvelle prise de contact !">
+
+            <!-- Champs visibles -->
+            <h3 class="Form">Nom</h3>
+            <label>
+                <input type="text" name="Nom" placeholder="Votre nom" class="input" required>
+            </label>
+
+            <h3 class="Form">Email</h3>
+            <label>
+                <input type="email" name="Email" placeholder="Votre email" class="input" required>
+            </label>
+
+            <h3 class="Form">Sujet</h3>
+            <label>
+                <input type="text" name="Sujet" placeholder="Sujet du message" class="input" required>
+            </label>
+
+            <h3 class="Form">Message</h3>
+            <label>
+                <textarea name="Message" placeholder="Votre message" class="TextArea" required></textarea>
+            </label>
+
+            <br><br>
+            <button type="submit" class="btn-envoyer">Envoyer</button>
+        </form>
     </div>
 </main>
 
