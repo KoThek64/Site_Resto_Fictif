@@ -408,3 +408,13 @@ nav ul li{
     font-style: normal;
     width: 230px;
 }
+
+.nom-reservation{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+    font-style: normal;
+    width: 230px;
+}

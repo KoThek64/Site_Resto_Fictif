@@ -98,6 +98,11 @@
             </select>
             <br>
             <br>
+            <label for="nom" class="reservation-label">Nom</label>
+            <br>
+            <input type="text" name="nom" id="nom" class="nom-reservation" required>
+            <br>
+            <br>
             <br>
             <button type="submit" class="btn-envoyer">Réserver</button>
         </form>
@@ -119,10 +124,11 @@
         const couverts = document.getElementById('nombre-couvert').value;
         const date = document.getElementById('date-reservation').value;
         const heure = document.getElementById('heure-reservation').value;
+        const nom = document.getElementById('nom').value;
 
         const { data, error } = await supabase
             .from('reservations')
-            .insert([{ couverts, date, heure }]);
+            .insert([{ couverts, date, heure, nom }]);
 
         if (error) {
             alert("Erreur lors de la réservation : " + error.message);
