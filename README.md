@@ -3,7 +3,7 @@
 
 Un site vitrine pour un restaurant fictif, réalisé avec HTML, CSS et un peu de JavaScript.
 
---->[Voir le site](https://mattys-restaurant.netlify.app/) <---
+---> [Voir le site](https://cuisinedelight.netlify.app/) <---
 
 ---
 ## 🚀 Fonctionnalités
