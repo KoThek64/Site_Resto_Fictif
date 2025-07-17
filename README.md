@@ -33,7 +33,7 @@ Site_Resto_Fictif/
 │   └── Menu/
 │       └── ...
 ├── index.html
-├── main.js // Inutile pour le moment
+├── main.js
 ├── package.json
 ├── README.md
 └── style.css
