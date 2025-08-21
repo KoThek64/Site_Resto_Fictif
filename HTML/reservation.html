@@ -33,6 +33,7 @@
         <p>Merci de préciser votre préférence pour le placement. Si la réservation en ligne n'est pas disponible pour votre demande, merci de nous contacter directement au 01 23 45 67 89. - Nous vous informons que vous bénéficiez de 2h pour profiter pleinement de votre repas et de 2h30 pour les groupes au-delà de 8 personnes.</p>
         <br>
         <form id="reservation-form">
+            <input type="hidden" id="id" name="id" value="">
             <label for="nombre-couvert" class="reservation-label">Couverts</label>
             <br>
             <select name="nombre-couvert" id="nombre-couvert" class="nombre-couvert">
@@ -57,7 +58,7 @@
             <input type="date" name="date-reservation" id="date-reservation" class="date-reservation">
             <script>
                 const today = new Date().toISOString().split('T')[0];
-                document.getElementById('date-reservation').setAttribute('min', today); // Pas de moi, source = ChatGPT, je ne savais pas comment faire.
+                document.getElementById('date-reservation').setAttribute('min', today);
             </script>
             <br>
             <br>

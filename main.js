@@ -6,21 +6,27 @@ const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-document.getElementById('reservation-form').addEventListener('submit', async (e) => {
-    e.preventDefault(); // empêche le rechargement
+document.addEventListener('DOMContentLoaded', () => {
+    const uniqueId = Date.now().toString();
+    document.getElementById('id').value = uniqueId;
 
-    const couverts = document.getElementById('nombre-couvert').value;
-    const date = document.getElementById('date-reservation').value;
-    const heure = document.getElementById('heure-reservation').value;
-    const nom = document.getElementById('nom').value;
+    document.getElementById('reservation-form').addEventListener('submit', async (e) => {
+        e.preventDefault(); // empêche le rechargement
 
-    const { data, error } = await supabase
-        .from('reservations')
-        .insert([{ couverts, date, heure, nom }]);
+        const id = document.getElementById('id').value;
+        const couverts = document.getElementById('nombre-couvert').value;
+        const date = document.getElementById('date-reservation').value;
+        const heure = document.getElementById('heure-reservation').value;
+        const nom = document.getElementById('nom').value;
 
-    if (error) {
-        alert("Erreur lors de la réservation : " + error.message);
-    } else {
-        window.location.href = "merci_2.html";
-    }
+        const { data, error } = await supabase
+            .from('reservations')
+            .insert([{ id, couverts, date, heure, nom }]);
+
+        if (error) {
+            alert("Erreur lors de la réservation : " + error.message);
+        } else {
+            window.location.href = "merci_2.html";
+        }
+    });
 });
