@@ -6,27 +6,24 @@ const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-document.addEventListener('DOMContentLoaded', () => {
-    const uniqueId = Date.now().toString();
-    document.getElementById('id').value = uniqueId;
+document.getElementById('reservation-form').addEventListener('submit', async (e) => {
+    e.preventDefault(); // empêche le rechargement
 
-    document.getElementById('reservation-form').addEventListener('submit', async (e) => {
-        e.preventDefault(); // empêche le rechargement
+    const table_id = Math.floor(Math.random() * 1000000) + 1;
+    const couverts = document.getElementById('nombre-couvert').value;
+    const date = document.getElementById('date-reservation').value;
+    const heure = document.getElementById('heure-reservation').value;
+    const nom = document.getElementById('nom').value;
 
-        const id = document.getElementById('id').value;
-        const couverts = document.getElementById('nombre-couvert').value;
-        const date = document.getElementById('date-reservation').value;
-        const heure = document.getElementById('heure-reservation').value;
-        const nom = document.getElementById('nom').value;
+    document.getElementById('table_id').value = table_id;
 
-        const { data, error } = await supabase
-            .from('reservations')
-            .insert([{ id, couverts, date, heure, nom }]);
+    const { data, error } = await supabase
+        .from('reservations')
+        .insert([{ couverts, date, heure, nom, table_id }]);
 
-        if (error) {
-            alert("Erreur lors de la réservation : " + error.message);
-        } else {
-            window.location.href = "merci_2.html";
-        }
-    });
+    if (error) {
+        alert("Erreur lors de la réservation : " + error.message);
+    } else {
+        window.location.href = "merci_2.html";
+    }
 });
