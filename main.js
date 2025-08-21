@@ -9,7 +9,18 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 document.getElementById('reservation-form').addEventListener('submit', async (e) => {
     e.preventDefault(); // empêche le rechargement
 
-    const table_id = Math.floor(Math.random() * 1000000) + 1;
+    const now = new Date();
+    const timestamp = now.getFullYear() +
+        String(now.getMonth() + 1).padStart(2, '0') +
+        String(now.getDate()).padStart(2, '0') +
+        String(now.getHours()).padStart(2, '0') +
+        String(now.getMinutes()).padStart(2, '0') +
+        String(now.getSeconds()).padStart(2, '0');
+
+    const random1 = Math.floor(Math.random() * 90) + 10;
+    const random2 = Math.floor(Math.random() * 90) + 10;
+
+    const table_id = `${timestamp}-${random1}${random2}`;
     const couverts = document.getElementById('nombre-couvert').value;
     const date = document.getElementById('date-reservation').value;
     const heure = document.getElementById('heure-reservation').value;
