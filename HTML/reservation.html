@@ -56,10 +56,6 @@
             <label for="date-reservation" class="reservation-label">Date</label>
             <br>
             <input type="date" name="date-reservation" id="date-reservation" class="date-reservation">
-            <script>
-                const today = new Date().toISOString().split('T')[0];
-                document.getElementById('date-reservation').setAttribute('min', today);
-            </script>
             <br>
             <br>
             <label for="heure-reservation" class="reservation-label">Heure</label>
@@ -109,6 +105,48 @@
         </form>
     </div>
 </main>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const dateInput = document.getElementById('date-reservation');
+        const heureSelect = document.getElementById('heure-reservation');
+
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', today);
+        dateInput.value = today;
+
+        function updateAvailableHours() {
+            const selectedDate = new Date(dateInput.value);
+            const now = new Date();
+            const options = heureSelect.querySelectorAll('option:not([disabled][hidden])');
+
+            options.forEach(option => {
+                option.disabled = false;
+            });
+
+            if (selectedDate.toDateString() === now.toDateString()) {
+                const currentHour = now.getHours();
+                const currentMinute = now.getMinutes();
+
+                options.forEach(option => {
+                    const timeValue = option.value;
+                    const [hours, minutes] = timeValue.split('h').map(part => parseInt(part || 0, 10));
+
+                    const optionTimeInMinutes = hours * 60 + minutes;
+                    const currentTimeInMinutes = currentHour * 60 + currentMinute;
+
+                    if (optionTimeInMinutes <= currentTimeInMinutes + 60) {
+                        option.disabled = true;
+                    }
+                });
+            }
+        }
+
+        updateAvailableHours();
+
+        dateInput.addEventListener('change', updateAvailableHours);
+    });
+</script>
 
 </body>
 
