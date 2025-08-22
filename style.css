@@ -418,3 +418,14 @@ nav ul li{
     font-style: normal;
     width: 230px;
 }
+
+#reservation-form:invalid .btn-envoyer {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #999;
+}
+
+#reservation-form:valid .btn-envoyer {
+    opacity: 1;
+    cursor: pointer;
+}
