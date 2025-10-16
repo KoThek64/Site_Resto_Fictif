@@ -8,7 +8,7 @@ Un site vitrine pour un restaurant fictif, réalisé avec HTML, CSS et un peu de
 ---
 ## 🚀 Fonctionnalités
 
-- **Accueil** : Acceuil du site avec un titre + image de fond. Les plats du chef ainsi que les avis clients.
+- **Accueil** : Accueil du site avec un titre + image de fond. Les plats du chef ainsi que les avis clients.
 - **Menu** : Présentation des plats avec catégories (par exemple "Entrée", "Plat", "Dessert", "Boissons").
 - **Contact** : Informations de contact (adresse, adresse mail, numéro). liens vers des réseaux sociaux. Formulaire complet (nom, e‑mail, objet, message `<textarea>`, bouton "Envoyer"). Utilisation de labels pour l'accessibilité.
 - **Réservation** : Choix du nombre de personnes, date et heure. Utilisation d'une base de donnée Supabase pour garder les réservations, par la suite une application prend les données et les restaurateurs pourrons l'utiliser.
@@ -40,10 +40,12 @@ Site_Resto_Fictif/
 ```
 
 ---
-## 🌟 Améliorations envisageables
+## 🌟 Amélioration envisageable
 
-- Ajouter des animations CSS/JS, car main.js est inutile pour le moment.
-- Rendre le site responsive. (en cours)
+- Ajouter des animations de scroll.
+- Slider/Carousel pour les avis clients.
+- Plus d'informations sur le restaurant (histoire, équipe, etc.).
+- Intégrer une carte interactive (Google Maps, OpenStreetMap).
 
 ---
 ## 🧑‍💻 Auteur
