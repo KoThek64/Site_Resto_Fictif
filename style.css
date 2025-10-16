@@ -10,15 +10,15 @@ body {
     font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
     font-style: normal;
     line-height: 1.6;
-    /* Masquer la barre de défilement */
-    overflow-y: scroll;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer et Edge */
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 /* Masquer la barre de défilement pour Chrome, Safari et Opera */
-body::-webkit-scrollbar {
-    display: none;
+html::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 ul {
