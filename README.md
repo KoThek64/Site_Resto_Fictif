@@ -1,24 +1,44 @@
 
-# Site Resto Fictif 🍽️
+<div align="center">
 
-Un site vitrine pour un restaurant fictif, réalisé avec HTML, CSS et un peu de JavaScript.
+# 🍽️ Cuisine Delight
 
----> [Voir le site](https://cuisinedelight.netlify.app/) <---
+**Site vitrine pour un restaurant fictif**
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
+
+[**→ Voir le site en ligne ←**](https://cuisinedelight.netlify.app/)
+
+</div>
 
 ---
-## 🚀 Fonctionnalités
 
-- **Accueil** : Accueil du site avec un titre + image de fond. Les plats du chef ainsi que les avis clients.
-- **Menu** : Présentation des plats avec catégories (par exemple "Entrée", "Plat", "Dessert", "Boissons").
-- **Contact** : Informations de contact (adresse, adresse mail, numéro). liens vers des réseaux sociaux. Formulaire complet (nom, e‑mail, objet, message `<textarea>`, bouton "Envoyer"). Utilisation de labels pour l'accessibilité.
-- **Réservation** : Choix du nombre de personnes, date et heure. Utilisation d'une base de donnée Supabase pour garder les réservations, par la suite une application prend les données et les restaurateurs pourrons l'utiliser.
+## ✨ Fonctionnalités
+
+| Page | Description |
+|:---|:---|
+| 🏠 **Accueil** | Hero avec image de fond, plats du chef mis en avant, avis clients |
+| 🍜 **Menu** | Carte complète organisée par catégories (Entrées, Plats, Desserts, Boissons) |
+| 📬 **Contact** | Coordonnées, liens réseaux sociaux, formulaire accessible (nom, e-mail, objet, message) |
+| 📅 **Réservation** | Formulaire de réservation (couverts, date, heure) connecté à une base de données Supabase |
 
 ---
-## 📁 Arborescence du projet
+
+## 🛠️ Stack technique
+
+- **Frontend** — HTML5, CSS3, JavaScript vanilla
+- **Base de données** — [Supabase](https://supabase.com/) (stockage des réservations)
+- **Hébergement** — [Netlify](https://www.netlify.com/)
+
+---
+
+## 📁 Arborescence
 
 ```
 Site_Resto_Fictif/
-├── .idea/
 ├── HTML/
 │   ├── contact.html
 │   ├── menu.html
@@ -27,44 +47,34 @@ Site_Resto_Fictif/
 │   └── reservation.html
 ├── images/
 │   ├── Acceuil/
-│   │   └── ...
 │   ├── Contact/
-│   │   └── ...
 │   └── Menu/
-│       └── ...
 ├── index.html
 ├── main.js
-├── package.json
-├── README.md
-└── style.css
+├── style.css
+└── package.json
 ```
 
 ---
-## 🌟 Amélioration envisageable
 
-- Ajouter des animations de scroll.
-- Slider/Carousel pour les avis clients.
-- Plus d'informations sur le restaurant (histoire, équipe, etc.).
-- Intégrer une carte interactive (Google Maps, OpenStreetMap).
+## 🔭 Améliorations envisagées
+
+- [ ] Slider / carousel pour les avis clients
+- [ ] Carte interactive (Google Maps ou OpenStreetMap)
+- [ ] Page "À propos" (histoire du restaurant, équipe)
+- [ ] Application restaurateur — interface de gestion des réservations, des stocks et du restaurant (tableau de bord connecté à Supabase)
 
 ---
+
 ## 🧑‍💻 Auteur
 
-Développé par **Mattys Lachaise** dans le cadre d'un projet personnel.
+Développé par **Mattys Lachaise** — [mattys.contact@gmail.com](mailto:mattys.contact@gmail.com)
 
 ---
-## ❌ Utilisation interdite
 
-> ⚠️ **Ce projet n'est pas destiné à être installé ou modifié.**
-
-Il est publié uniquement à titre **d'exemple visuel**.  
-Toute utilisation non autorisée (personnelle, commerciale, scolaire) constitue une violation de droit d’auteur.
-
-Contact : mattys.contact@gmail.com
-
----
 ## 🔒 Licence
 
-Ce projet est soumis à une **licence propriétaire**.
+Ce projet est publié à titre d'**exemple visuel uniquement**.
+Toute utilisation non autorisée (personnelle, commerciale, scolaire) constitue une violation des droits d'auteur.
 
-Tous droits réservés © 2025 KoThek64.
+Tous droits réservés © 2025 KoThek64 — voir le fichier [LICENCE](./LICENCE).
